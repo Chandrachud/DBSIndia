@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cardInfoCell" rowHeight="165" id="KGk-i7-Jjw" customClass="CardInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="165"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="364" height="164"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-account" translatesAutoresizingMaskIntoConstraints="NO" id="EeY-Ph-mme">
+                        <rect key="frame" x="0.0" y="0.0" width="182" height="123"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FqX-Pc-djr">
+                        <rect key="frame" x="112" y="55" width="61" height="35"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                        <color key="textColor" red="0.35294117650000001" green="0.14901960780000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6IR-uJ-jm1">
+                        <rect key="frame" x="182" y="0.0" width="182" height="123"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="7bl-Xt-dX8">
+                                <rect key="frame" x="0.0" y="18" width="164" height="87"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Virtual Debit Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ak-za-IkK">
+                                <rect key="frame" x="8" y="31" width="104" height="14"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="11"/>
+                                <color key="textColor" red="0.94117647059999998" green="0.94509803920000002" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="**** **** **** 8574" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaW-Rq-kHJ">
+                                <rect key="frame" x="8" y="44" width="106" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.94117647059999998" green="0.94509803920000002" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9882352941176471" green="0.72941176470588232" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7bl-Xt-dX8" firstAttribute="centerY" secondItem="6IR-uJ-jm1" secondAttribute="centerY" id="BdU-ah-npA"/>
+                            <constraint firstItem="yaW-Rq-kHJ" firstAttribute="leading" secondItem="8Ak-za-IkK" secondAttribute="leading" id="NQE-i8-F2N"/>
+                            <constraint firstItem="7bl-Xt-dX8" firstAttribute="height" secondItem="6IR-uJ-jm1" secondAttribute="height" multiplier="0.7" id="dWW-9V-x2u"/>
+                            <constraint firstItem="yaW-Rq-kHJ" firstAttribute="top" secondItem="8Ak-za-IkK" secondAttribute="bottom" constant="-1" id="jvX-Y4-M54"/>
+                            <constraint firstItem="7bl-Xt-dX8" firstAttribute="width" secondItem="6IR-uJ-jm1" secondAttribute="width" multiplier="0.9" id="tEg-fI-0JD"/>
+                            <constraint firstItem="7bl-Xt-dX8" firstAttribute="leading" secondItem="6IR-uJ-jm1" secondAttribute="leading" id="xjw-l4-X6r"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HbR-V5-lbi">
+                        <rect key="frame" x="0.0" y="123" width="364" height="41"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-down" translatesAutoresizingMaskIntoConstraints="NO" id="mmc-8y-xHd">
+                                <rect key="frame" x="318" y="10" width="21" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mmc-8y-xHd" secondAttribute="height" multiplier="1:1" id="Aju-zI-fPc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Account is Empty, Fund Account" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ma5-Kn-lxF">
+                                <rect key="frame" x="30" y="10" width="227" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.35294117650000001" green="0.14901960780000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hurry add funds now and start living with digibank" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKU-q6-HTg">
+                                <rect key="frame" x="30" y="31" width="243" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.35294117650000001" green="0.14901960780000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mmc-8y-xHd" secondAttribute="trailing" constant="25" id="GYe-jz-mZ9"/>
+                            <constraint firstItem="mKU-q6-HTg" firstAttribute="top" secondItem="ma5-Kn-lxF" secondAttribute="bottom" constant="5" id="H4J-JR-LNl"/>
+                            <constraint firstItem="mKU-q6-HTg" firstAttribute="leading" secondItem="ma5-Kn-lxF" secondAttribute="leading" id="O1p-us-IG2"/>
+                            <constraint firstItem="mmc-8y-xHd" firstAttribute="height" secondItem="HbR-V5-lbi" secondAttribute="height" multiplier="0.5" id="fxo-94-5Nc"/>
+                            <constraint firstItem="mmc-8y-xHd" firstAttribute="centerY" secondItem="HbR-V5-lbi" secondAttribute="centerY" id="ni0-el-bPO"/>
+                            <constraint firstItem="ma5-Kn-lxF" firstAttribute="leading" secondItem="HbR-V5-lbi" secondAttribute="leading" constant="30" id="tRH-kd-rBj"/>
+                            <constraint firstItem="ma5-Kn-lxF" firstAttribute="top" secondItem="mmc-8y-xHd" secondAttribute="top" id="yOx-Ey-Axm"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FUND ACCOUNT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gig-tP-OQ9">
+                        <rect key="frame" x="121" y="89" width="52" height="8"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="6"/>
+                        <color key="textColor" red="0.35294117650000001" green="0.14901960780000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account no: *** *** 7573" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjE-dC-BNU">
+                        <rect key="frame" x="50" y="43" width="123" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digibank eWallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5Q-yU-TEe">
+                        <rect key="frame" x="87" y="31" width="86" height="12"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8Ak-za-IkK" firstAttribute="leading" secondItem="EeY-Ph-mme" secondAttribute="trailing" constant="8" id="0lg-M4-fZa"/>
+                    <constraint firstItem="EeY-Ph-mme" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="46z-JW-unt"/>
+                    <constraint firstItem="HbR-V5-lbi" firstAttribute="top" secondItem="6IR-uJ-jm1" secondAttribute="bottom" id="7Ud-sC-EkZ"/>
+                    <constraint firstItem="HjE-dC-BNU" firstAttribute="trailing" secondItem="FqX-Pc-djr" secondAttribute="trailing" id="94m-kP-GcU"/>
+                    <constraint firstItem="FqX-Pc-djr" firstAttribute="top" secondItem="HjE-dC-BNU" secondAttribute="bottom" id="JyV-qi-DWu"/>
+                    <constraint firstItem="FqX-Pc-djr" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-40" id="KFE-HL-Gs8"/>
+                    <constraint firstItem="6IR-uJ-jm1" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.5" id="Rrm-ko-3PG"/>
+                    <constraint firstItem="EeY-Ph-mme" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.75" id="YxC-bh-g5k"/>
+                    <constraint firstItem="HbR-V5-lbi" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="c5f-rD-n1V"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="HbR-V5-lbi" secondAttribute="bottom" constant="-8" id="c6P-sH-LEO"/>
+                    <constraint firstItem="6IR-uJ-jm1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="e4d-cg-9pg"/>
+                    <constraint firstItem="U5Q-yU-TEe" firstAttribute="trailing" secondItem="HjE-dC-BNU" secondAttribute="trailing" id="g31-uh-lJz"/>
+                    <constraint firstItem="8Ak-za-IkK" firstAttribute="top" secondItem="U5Q-yU-TEe" secondAttribute="top" id="kcf-Qp-GGO"/>
+                    <constraint firstItem="EeY-Ph-mme" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="lSV-hq-bWA"/>
+                    <constraint firstItem="HjE-dC-BNU" firstAttribute="top" secondItem="U5Q-yU-TEe" secondAttribute="bottom" id="m0L-uy-kY0"/>
+                    <constraint firstItem="EeY-Ph-mme" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.5" id="pza-5g-9qo"/>
+                    <constraint firstItem="HbR-V5-lbi" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="rnR-a8-2Ha"/>
+                    <constraint firstItem="FqX-Pc-djr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-10" id="sPy-Dl-NtD"/>
+                    <constraint firstItem="Gig-tP-OQ9" firstAttribute="trailing" secondItem="FqX-Pc-djr" secondAttribute="trailing" id="vDv-zW-O0j"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6IR-uJ-jm1" secondAttribute="trailing" constant="-8" id="xMZ-jN-h2F"/>
+                    <constraint firstItem="6IR-uJ-jm1" firstAttribute="height" secondItem="EeY-Ph-mme" secondAttribute="height" id="ym8-Gt-Igs"/>
+                    <constraint firstItem="Gig-tP-OQ9" firstAttribute="top" secondItem="FqX-Pc-djr" secondAttribute="bottom" constant="-1" id="zK1-i2-ezL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="305" y="192.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg-account" width="383" height="363"/>
+        <image name="bg-down" width="750" height="804"/>
+        <image name="card" width="348" height="258"/>
+    </resources>
+</document>
